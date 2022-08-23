@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <title>I am Ngọc Hùng</title>
+  </head>
+  <body>
+    <div id="wraper">
+      <div id="header">
+        <nav class="container">
+          <a href="" id="logo">
+            <img src="images/logo.png" alt="Ảnh logo" />
+          </a>
+          <ul id="main-menu">
+            <li><a href="">About</a></li>
+            <li>
+              <a href="">HTML</a>
+              <!-- ul.sub-menu>li*4>a{Menu 2.$} -->
+              <ul class="sub-menu">
+                <li><a href="">Menu 2.1</a></li>
+                <li>
+                  <a href="">Menu 2.2</a>
+                  <ul class="sub-menu">
+                    <li><a href="">Menu 2.2.1</a></li>
+                    <li><a href="">Menu 2.2.2</a></li>
+                    <li><a href="">Menu 2.2.3</a></li>
+                    <li><a href="">Menu 2.2.4</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Menu 2.3</a></li>
+                <li><a href="">Menu 2.4</a></li>
+              </ul>
+            </li>
+            <li><a href="">CSS</a></li>
+            <li>
+              <a href="">PHP</a>
+              <ul class="sub-menu">
+                <li><a href="">Menu 2.1</a></li>
+                <li>
+                  <a href="">Menu 2.2</a>
+                  <ul class="sub-menu">
+                    <li><a href="">Menu 2.2.1</a></li>
+                    <li><a href="">Menu 2.2.2</a></li>
+                    <li><a href="">Menu 2.2.3</a></li>
+                    <li><a href="">Menu 2.2.4</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Menu 2.3</a></li>
+                <li><a href="">Menu 2.4</a></li>
+              </ul>
+            </li>
+            <li><a href="">Laravel</a></li>
+            <li><a href="">Bootstrap</a></li>
+            <li><a href="">Javascript</a></li>
+            <li><a href="">Project</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Tìm tất cả các li có sub-menu và thêm nó vào class has-child
+      $(".sub-menu").parent("li").addClass("has-child");
+    });
+  </script>
+</html>
